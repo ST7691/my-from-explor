@@ -13,13 +13,20 @@ function App() {
   return (
     <>
       
-      {/* <h1> React form Explore </h1>
+      <h1> React form Explore </h1>
+      {/* simplw form */}
       <Simple></Simple>
+      {/* action ar bitore formda diye */}
       <FormAction></FormAction>
+      {/* controlled form */}
       <ControlledFild></ControlledFild>
+      {/* un control from */}
       <Uncontrolled></Uncontrolled>
+      {/* creat hook and use */}
       <Hookform></Hookform>
-      <Productmanagement></Productmanagement> */}
+      {/* product add table */}
+      <Productmanagement></Productmanagement>
+      {/* context use */}
       <FamilyTree></FamilyTree>
     </>
   )
