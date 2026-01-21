@@ -2,6 +2,7 @@
 import './App.css'
 import ControlledFild from './componets/ControlledFild/ControlledFild'
 import FormAction from './componets/FromAction/FormAction'
+import Hookform from './componets/Hookform/Hookform'
 import Uncontrolled from './componets/Uncntrolled/Uncontrolled'
 import Simple from './Simple'
 
@@ -15,6 +16,7 @@ function App() {
       <FormAction></FormAction>
       <ControlledFild></ControlledFild>
       <Uncontrolled></Uncontrolled>
+      <Hookform></Hookform>
     </>
   )
 }

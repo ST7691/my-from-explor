@@ -1,12 +1,21 @@
 import React, { useState } from 'react'
 
 const ControlledFild = () => {
+    const [name,setName]= useState('')
+    const [email,setEmail] = useState('')
     const [password, setpassword]= useState('')
     const [error,seterror]= useState('')
 
     const loginData = e =>{
         e.preventDefault();
-         console.log('login data value')
+         console.log(name,email,password)
+
+    }
+    const handleName = e=>{
+        setName(e.target.value);
+    }
+    const handelEmail= e=>{
+      setEmail(e.target.value)
     }
     const handlePassword = e =>{
      console.log(e.target.value);
@@ -22,7 +31,9 @@ const ControlledFild = () => {
     <div>
         <h2>controlled data form</h2>
         <form action=""onSubmit={loginData} on >
-            <input type="email" name="email"placeholder='email' required/>
+            <input type="text" name="name" placeholder='name'onChange={ handleName} defaultValue={name} />
+            <br />
+            <input type="email" onChange={handelEmail} defaultValue={email} name="email"placeholder='email' required/>
             <br />
             <input type="password" defaultValue={password} onChange={handlePassword} name="password"placeholder='password' required/>
             <br />
